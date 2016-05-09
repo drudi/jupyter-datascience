@@ -7,7 +7,8 @@ RUN apk update && apk add python python-dev py-pip gcc g++ musl-dev \
     && pip install jupyter \
     && pip install solr \
     && pip install redis \
-    && pip install pymongo;
+    && pip install pymongo \
+    && pip install requests;
 
 RUN apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ tini
 
